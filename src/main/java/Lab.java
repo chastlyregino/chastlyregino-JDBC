@@ -40,7 +40,7 @@ public class Lab {
         try {
             Connection connection = ConnectionUtil.getConnection();
 
-            String sql = "INSERT INTO songs (title, artist) values ('" + song.gettitle() + "', '" + song.getArtist() + "');";
+            String sql = "INSERT INTO songs (title, artist) VALUES ('" + song.gettitle() + "', '" + song.getArtist() + "');";
 
             Statement statement = connection.createStatement();
 
